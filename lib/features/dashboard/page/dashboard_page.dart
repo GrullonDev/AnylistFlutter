@@ -11,14 +11,15 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseModelScaffold(
-        model: DashboardBloc(
-          context: context,
-        ),
-        builder: (context, _) {
-          return const Scaffold(
-            appBar: CustomAppBar(),
-            body: DashboardLayout(),
-          );
-        });
+      model: DashboardBloc(
+        context: context,
+      ),
+      builder: (context, _) {
+        return const Scaffold(
+          appBar: CustomAppBar(),
+          body: DashboardLayout(),
+        );
+      },
+    );
   }
 }
