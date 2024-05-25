@@ -11,7 +11,9 @@ class DashboardLayout extends StatelessWidget {
       child: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(IconConst.backgroudImage),
+            image: AssetImage(
+              IconConst.backgroudImage,
+            ),
             fit: BoxFit.cover,
           ),
         ),
