@@ -74,10 +74,11 @@ Clonar el repositorio
 ¡Contribuciones son bienvenidas! Si quieres contribuir a Mi Tiendita, por favor sigue los siguientes pasos:
 
 Haz un fork del repositorio.
-1. Crea una rama con tu nueva funcionalidad o corrección de bug: git checkout -b feature/nueva-funcionalidad.
-2. Realiza tus cambios y haz commit de ellos: git commit -m 'Añadir nueva funcionalidad'.
-3. Sube tus cambios a tu repositorio fork: git push origin feature/nueva-funcionalidad.
+1. Crea una rama con tu nueva funcionalidad o corrección de bug: git checkout -b feature/nueva-funcionalidad
+2. Realiza tus cambios y haz commit de ellos: git commit -m 'Añadir nueva funcionalidad'
+3. Sube tus cambios a tu repositorio fork: git push origin feature/nueva-funcionalidad
 4. Abre un Pull Request en el repositorio original.
+5. Actualiza el archivo README.md
 
 # Licencia
 - Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles
