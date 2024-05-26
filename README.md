@@ -24,7 +24,23 @@ mi_tiendita/
 │
 ├── lib/
 │   ├── features/
+|   |   ├── auth/
+|   |   |   ├── login/
+│   │   │   |   ├── page/
+│   │   │   │   |   ├── login_layout.dart
+│   │   │   │   |   └── login_page.dart
+│   │   │   |   └── provider/
+│   │   │   │       └── auth_provider.dart
+|   |   |   ├── register/
+│   │   │   |   ├── page/
+│   │   │   │   |   ├── register_layout.dart
+│   │   │   │   |   └── register_page.dart
+│   │   │   |   └── provider/
+│   │   │   │       └── register_provider.dart
 │   │   ├── dashboard/
+│   │   │   ├── page/
+│   │   │   │   ├── dashboard_layout.dart
+│   │   │   │   └── dashboard_page.dart
 │   │   │   ├── provider/
 │   │   │   │   └── dashboard_bloc.dart
 │   │   │   ├── widgets/
@@ -33,8 +49,9 @@ mi_tiendita/
 │   │   │   └── dashboard_layout.dart
 │   │   └── ... (otros módulos de la app)
 │   ├── utils/
-│   │   └── constants/
-│   │       └── icon.dart
+│   │   ├── constants/
+│   │   |   └── icon.dart
+│   │   └── ...(otras utilidades de la app)
 │   ├── main.dart
 │   └── ... (otros archivos y directorios de la app)
 │
