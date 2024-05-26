@@ -19,27 +19,24 @@ class ProductCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20.0),
-      child: CarouselSlider.builder(
-        itemCount: productImages.length,
-        itemBuilder: (BuildContext context, int index, int realIndex) {
-          return ProductCard(
-            imageUrl: productImages[index],
-            productName: productNames[index],
-            productPrice: productPrices[index],
-          );
-        },
-        options: CarouselOptions(
-          height: 400.0,
-          enlargeCenterPage: true,
-          autoPlay: true,
-          aspectRatio: 16 / 9,
-          autoPlayCurve: Curves.fastOutSlowIn,
-          enableInfiniteScroll: true,
-          autoPlayAnimationDuration: const Duration(milliseconds: 800),
-          viewportFraction: 0.8,
-        ),
+    return CarouselSlider.builder(
+      itemCount: productImages.length,
+      itemBuilder: (BuildContext context, int index, int realIndex) {
+        return ProductCard(
+          imageUrl: productImages[index],
+          productName: productNames[index],
+          productPrice: productPrices[index],
+        );
+      },
+      options: CarouselOptions(
+        height: 4000.0,
+        enlargeCenterPage: true,
+        autoPlay: true,
+        aspectRatio: 16 / 9,
+        autoPlayCurve: Curves.fastOutSlowIn,
+        enableInfiniteScroll: true,
+        autoPlayAnimationDuration: const Duration(milliseconds: 800),
+        viewportFraction: 0.8,
       ),
     );
   }

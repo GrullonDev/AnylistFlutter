@@ -20,12 +20,11 @@ class ProductCard extends StatelessWidget {
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Image.network(
+          Image.asset(
             imageUrl,
             fit: BoxFit.cover,
-            height: 200.0,
-            width: double.infinity,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -40,7 +39,7 @@ class ProductCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              '\Q${productPrice.toStringAsFixed(2)}',
+              'Q${productPrice.toStringAsFixed(2)}',
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.grey[600],
