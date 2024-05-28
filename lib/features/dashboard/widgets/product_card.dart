@@ -5,7 +5,8 @@ class ProductCard extends StatelessWidget {
   final String productName;
   final double productPrice;
 
-  const ProductCard({super.key, 
+  const ProductCard({
+    super.key,
     required this.imageUrl,
     required this.productName,
     required this.productPrice,
@@ -16,35 +17,40 @@ class ProductCard extends StatelessWidget {
     return Card(
       elevation: 5.0,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
-      ),
+          borderRadius: BorderRadius.circular(15.0), side: BorderSide.none),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
             imageUrl,
             fit: BoxFit.cover,
+            alignment: Alignment.center,
+            cacheHeight: 265,
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              productName,
-              style: const TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                productName,
+                style: const TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Q${productPrice.toStringAsFixed(2)}',
-              style: TextStyle(
-                fontSize: 16.0,
-                color: Colors.grey[600],
+              const SizedBox(
+                width: 25,
               ),
-            ),
+              Text(
+                'Q${productPrice.toStringAsFixed(2)}',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: Colors.grey[600],
+                ),
+              ),
+            ],
           ),
         ],
       ),

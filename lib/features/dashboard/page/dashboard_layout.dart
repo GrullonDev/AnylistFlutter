@@ -27,34 +27,28 @@ class DashboardLayout extends StatelessWidget {
           const Scaffold(
             backgroundColor: Colors.transparent,
             body: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 25),
-                    child: ProductCarousel(
-                      productImages: [
-                        IconConst.product,
-                        IconConst.product2,
-                        IconConst.product3,
-                        IconConst.product4,
-                        IconConst.product5,
-                      ],
-                      productNames: [
-                        'Bebidas',
-                        'Proteina',
-                        'Embutidos',
-                        'Varios',
-                        'Tortrix',
-                      ],
-                      productPrices: [
-                        0.35,
-                        1.35,
-                        4.30,
-                        1.35,
-                        5.30,
-                      ],
-                    ),
-                  ),
+              padding: EdgeInsets.all(25),
+              child: ProductCarousel(
+                productImages: [
+                  IconConst.product,
+                  IconConst.product2,
+                  IconConst.product3,
+                  IconConst.product4,
+                  IconConst.product5,
+                ],
+                productNames: [
+                  'Bebidas',
+                  'Proteina',
+                  'Embutidos',
+                  'Varios',
+                  'Tortrix',
+                ],
+                productPrices: [
+                  0.35,
+                  1.35,
+                  4.30,
+                  1.35,
+                  5.30,
                 ],
               ),
             ),
