@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+.fvmrc
 
 # IntelliJ related
 *.iml
@@ -90,5 +91,10 @@ ios/Flutter/Generated.xcconfig
 obfuscate
 
 #FVM
-.fvm/flutter_sdk
 !.fvm/fvm_config.json
+
+# FVM Version Cache
+.fvm/
+
+# Firebase
+!.firebase.json

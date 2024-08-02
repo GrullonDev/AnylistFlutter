@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-import 'package:anylist/utils/bases/base_model.dart';
-import 'package:anylist/widgets/custom_circular_progress.dart';
+import 'package:anylist/utils/base_model.dart';
+import 'package:anylist/utils/message_display.dart';
+import 'package:anylist/utils/widgets/circular_progress.dart';
 
 class BaseModelScaffold<T extends BaseModel> extends StatefulWidget {
   const BaseModelScaffold({
@@ -32,7 +33,7 @@ class _BaseModelScaffoldState<T extends BaseModel>
     Future.delayed(
       Duration.zero,
       () {
-        ScaffoldMessenger.of(context).hideCurrentSnackBar();
+        MessageDisplay.hideSnackbar(context);
         FocusScope.of(context).unfocus();
       },
     );
@@ -54,7 +55,7 @@ class _BaseModelScaffoldState<T extends BaseModel>
                   ? Container(
                       color: Colors.black.withOpacity(0.4),
                       child: const Center(
-                        child: CustomCircularProgress(),
+                        child: CircularProgress(),
                       ),
                     )
                   : const SizedBox(),

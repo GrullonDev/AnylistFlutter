@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "110037097853",
+    "project_id": "anylist-25a2a",
+    "storage_bucket": "anylist-25a2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110037097853:android:4fe241ac329eff5a0b4014",
+        "android_client_info": {
+          "package_name": "com.example.anylist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlQOV7VyG7nAOZxAzmq3X7J8_IAR3nlv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
