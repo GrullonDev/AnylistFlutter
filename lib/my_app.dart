@@ -16,14 +16,20 @@ class MyApp extends StatelessWidget {
           create: (_) => SignInBloc(),
         ),
       ],
-      child: Scaffold(
-        backgroundColor: Colors.yellowAccent,
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          centerTitle: true,
-          title: const Text('Creaciones Any'),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: Colors.black,
+            centerTitle: true,
+            title: const Text(
+              'Creaciones Any',
+              style: TextStyle(fontSize: 14),
+            ),
+          ),
+          body: const SignInPage(),
         ),
-        body: const SignInPage(),
       ),
     );
   }

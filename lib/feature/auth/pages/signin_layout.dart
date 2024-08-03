@@ -5,8 +5,29 @@ class SignInLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.yellowAccent,
+    return SizedBox(
+      height: 340,
+      child: Column(
+        children: [
+          Container(
+            color: Colors.white,
+            child: const Text(
+              'Hola Mundo!!',
+              style: TextStyle(fontSize: 25),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Center(
+            child: Container(
+              color: Colors.white,
+              child: const Text(
+                'San Pedro',
+                style: TextStyle(fontSize: 25),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

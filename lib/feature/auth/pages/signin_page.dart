@@ -12,7 +12,10 @@ class SignInPage extends StatelessWidget {
     return BaseModelScaffold(
       model: SignInBloc(),
       builder: (_, __) {
-        return const SignInLayout();
+        return const SizedBox(
+          height: 255,
+          child: SignInLayout(),
+        );
       },
     );
   }
